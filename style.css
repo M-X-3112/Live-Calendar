@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(154,47,182);
+    background: linear-gradient(102deg, rgba(154,47,182,1) 10%, rgba(41,167,232,1) 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #333;
+}
+
+.left {
+    width: 60%;
+    background: #fff;
+}
+
+.right {
+    width: 40%;
+    background: #e0de0c;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#day {font-size: 9rem}
+
+#weekday {font-size: 3rem; margin-top: 10px}
+
+#month {font-size: 1.7rem; font-weight: bold}
+
+#year {font-size: 2rem}
+
+hr {
+    width: 150px;
+    height: 8px;
+    border: none;
+    background-color: black
+}
