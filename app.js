@@ -7,8 +7,7 @@ const weekArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
 const currentTime = new Date();
 console.log(currentTime);
 
-
-day.innerHTML = currentTime.getDate();
+day.innerHTML = (currentTime.getDate() <10 ? "0" : "") + currentTime.getDate();
 weekday.innerHTML = weekArr[currentTime.getDay()];
 month.innerHTML = monthsArr[currentTime.getMonth()];
 year.innerHTML = currentTime.getFullYear();
